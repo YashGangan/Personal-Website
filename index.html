@@ -7,18 +7,18 @@
     <title>Welcome to my personal website</title>
     <style>
         h1{
-            text-align: left;
             font-family: cursive ;
             font-weight: bolder;
             font-size: 300%;
             color: rgb(27, 190, 54);
             word-spacing: -5px;
             letter-spacing: -2pt;
+            padding-top: 30px;
         }
         nav a{
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: normal;
-            font-size: 20px;
+            font-size: 22px;
             padding-inline: 30px;
         }
         h2+p{
@@ -33,15 +33,27 @@
             text-align: center;
             padding: 10px;
         }
+        header{
+            text-align: left;
+            background-color: black;
+            padding: 100px;
+        }
+        footer{
+            text-align: center;
+            padding: 8px;
+        }
     </style>
 </head>
 <body>
-    <br>
-    <div class="bgimg"> <--add header here-->
-    <h1>Hey, I'm Yash Gangan<br>and i'm learning to code</h1></div>
-    <br><br>
-    <hr>
-    <br>
+<header>
+    <h1>Hey, I'm Yash Gangan<br>and i'm learning to code</h1>
+    <br><br><br>
+    <span class="insta"><a href=https://www.instagram.com/yashgangan_/ target="_blank">Instagram</a></span> 
+    <span class="linkedin"><a href=https://www.linkedin.com/in/yash-gangan-1939a4217/ target="_blank">LinkedIn</a></span>
+    <span class="twitter"><a href=https://twitter.com/yashgangan_ target="_blank">Twitter</a></span>
+</header>
+<hr>
+<br>
     <!--navigation bar-->
     <nav><a href="#home">HOME</a> &nbsp; &nbsp;|&nbsp; &nbsp;
         <a href="#about">ABOUT</a> &nbsp; &nbsp;|&nbsp; &nbsp;
@@ -50,6 +62,7 @@
         <a href="#contact">CONTACT</a>
     </nav>
     <br>
+    <hr>
     <br>
     <!--about me-->
     <h2><div id="about"></div>ABOUT</h2>
@@ -93,6 +106,9 @@
         <input type="submit" value="Submit">
     </form>
 <br><hr>
+<footer>
+    Copyright &copy; Yash Gangan, 2021
+</footer>
 </p>
 </body>
 </html>
