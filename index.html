@@ -6,17 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to my personal website</title>
     <style>
-        h1{
-            font-family: cursive ;
-            font-weight: bolder;
-            font-size: 300%;
-            color: rgb(27, 190, 54);
-            word-spacing: -5px;
-            letter-spacing: -2pt;
-            padding-top: 30px;
-        }
         nav a{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: normal;
             font-size: 22px;
             padding-inline: 30px;
@@ -25,66 +15,103 @@
             font-size: 110%;
         }
         nav a:hover{
-            background-color: rgba(63, 210, 247, 0.863);
+            color: rgba(63, 210, 247, 0.863);
             
         }
+        nav :visited{
+            color: white;
+        }
         nav{
-            background-color: rgb(255, 253, 253);
+            background-color: rgb(39, 39, 39);
             text-align: center;
             padding: 10px;
+        }
+        nav li{
+            display: inline;
+            padding: 10px;
+        }
+        nav ul{
+            text-decoration: none;
+            font-family: sans-serif;
         }
         header{
             text-align: left;
             background-color: black;
-            padding: 100px;
+            padding: 110px;
+        }
+        header h1{
+            font-family: sans-serif;
+            color: white;
+            font-size: 400%
+        }
+        .button{
+            background-color: black;
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            border: none;
+        }
+        .button:hover{
+            background-color: red;
         }
         footer{
             text-align: center;
-            padding: 8px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        h2{
+            font-size: 180%;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+        .about{
+            padding: 10px 10px;
+            float: left;
+            width: 70%;
+            box-sizing: border-box;
+        }
+        .me{
+            float: right;
+            width: 30%;
+        }
+        @media(max-width:600px){
+            .about{
+                width:100%;
+                float: none;
+            }
+            .me{
+                width:100%;
+                float:none;
+            }
         }
     </style>
+
 </head>
 <body>
 <header>
-    <h1>Hey, I'm Yash Gangan<br>and i'm learning to code</h1>
-    <br><br><br>
-    <span class="insta"><a href=https://www.instagram.com/yashgangan_/ target="_blank">Instagram</a></span> 
-    <span class="linkedin"><a href=https://www.linkedin.com/in/yash-gangan-1939a4217/ target="_blank">LinkedIn</a></span>
-    <span class="twitter"><a href=https://twitter.com/yashgangan_ target="_blank">Twitter</a></span>
+    <h1>Hey,<br> I'm Yash<br>and i'm learning to code</h1>
 </header>
-<hr>
-<br>
     <!--navigation bar-->
-    <nav><a href="#home">HOME</a> &nbsp; &nbsp;|&nbsp; &nbsp;
-        <a href="#about">ABOUT</a> &nbsp; &nbsp;|&nbsp; &nbsp;
-        <a href="#projects">PROJECTS</a> &nbsp; &nbsp;|&nbsp; &nbsp;
-        <a href="#newsletter">MY NEWSLETTER</a> &nbsp; &nbsp;|&nbsp; &nbsp;
-        <a href="#contact">CONTACT</a>
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
     </nav>
-    <br>
     <hr>
-    <br>
-    <!--about me-->
+    <!--about me--><div class="about">
     <h2><div id="about"></div>ABOUT</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum itaque cum repellat consequatur nam sequi? Sapiente unde in laboriosam nisi suscipit, vel rem consequatur aliquid explicabo temporibus earum dolores voluptate asperiores totam est quo enim velit. Molestiae doloremque eum dicta aliquam sed, ratione pariatur mollitia ipsum laborum necessitatibus molestias recusandae.</p>
-    <img src=image/me.jpg alt="this is me" width="200">
-    <br><br><hr>
-    <br>
-    <h2><div id=projects></div>PROJECTS</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut quas excepturi hic? Dolores cum ad explicabo architecto quibusdam. Quaerat suscipit distinctio mollitia est perspiciatis itaque iusto reiciendis delectus veritatis quia?</p>
-    <br><hr>
-    <br>
-    <!--newsletter-->
-    <h2><div id=newsletter></div>MY NEWSLETTER</h2>
-    <h3>Some of my most recent posts:</h3>
-    <a href="https://yashg.substack.com/p/anger-is-a-flu" target="_blank"><img src=image/anger.jpeg alt= "Anger is a flu" width=33%></a>
-    <a href="https://yashg.substack.com/p/anger-is-a-flu" target="_blank"><img src=image/anger.jpeg alt= "Anger is a flu" width=33%></a>
-    <a href="https://yashg.substack.com/p/anger-is-a-flu" target="_blank"><img src=image/anger.jpeg alt= "Anger is a flu" width=33%></a>
-    <iframe src="https://yashg.substack.com/embed" width="100%" height="200" style="border:0px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-    <br><hr>
-    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum itaque cum repellat consequatur nam sequi? Sapiente unde in laboriosam nisi suscipit, vel rem consequatur aliquid explicabo temporibus earum dolores voluptate asperiores totam est quo enim velit. Molestiae doloremque eum dicta aliquam sed, ratione pariatur mollitia ipsum laborum necessitatibus molestias recusandae</div></p>
+    <div class="me"></div>
+        <img src=image/me.jpg alt="this is me" width="250">
+    <hr>
     <!--contact-->
-    <h2><div id=contact>CONTACT</div></h2>
+    <h2><div id="contact">CONTACT</div></h2>
     <p>I know there's nothing much to see here at the moment, but maybe you'd be interested to talk with me.<br>
     <h3>Here are my socials:</h3>
     <a href=https://www.instagram.com/yashgangan_/ target="_blank">Instagram</a> 
@@ -103,11 +130,11 @@
         <input type="text" id="sub" name="sub"><br><br>
         <label for="msg">Message:</label>
         <textarea id="msg" name="msg" rows="3" cols="30"></textarea> <br><br><br>
-        <input type="submit" value="Submit">
+        <input class="button" type="submit" value="Submit">
     </form>
-<br><hr>
+<hr>
 <footer>
-    Copyright &copy; Yash Gangan, 2021
+    Copyright &copy; 2021, Yash Gangan
 </footer>
 </p>
 </body>
