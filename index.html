@@ -4,138 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my personal website</title>
-    <style>
-        nav a{
-            font-weight: normal;
-            font-size: 22px;
-            padding-inline: 30px;
-        }
-        h2+p{
-            font-size: 110%;
-        }
-        nav a:hover{
-            color: rgba(63, 210, 247, 0.863);
-            
-        }
-        nav :visited{
-            color: white;
-        }
-        nav{
-            background-color: rgb(39, 39, 39);
-            text-align: center;
-            padding: 10px;
-        }
-        nav li{
-            display: inline;
-            padding: 10px;
-        }
-        nav ul{
-            text-decoration: none;
-            font-family: sans-serif;
-        }
-        header{
-            text-align: left;
-            background-color: black;
-            padding: 110px;
-        }
-        header h1{
-            font-family: sans-serif;
-            color: white;
-            font-size: 400%
-        }
-        .button{
-            background-color: black;
-            color: rgb(255, 255, 255);
-            padding: 12px 16px;
-            border: none;
-        }
-        .button:hover{
-            background-color: red;
-        }
-        footer{
-            text-align: center;
-            padding: 0px;
-            background-color: black;
-            color: white;
-        }
-        body{
-            font-family: sans-serif;
-        }
-        h2{
-            font-size: 180%;
-            text-align: center;
-            padding: 0px;
-            margin: 0px;
-        }
-        .about{
-            padding: 10px 10px;
-            float: left;
-            width: 70%;
-            box-sizing: border-box;
-        }
-        .me{
-            float: right;
-            width: 30%;
-        }
-        @media(max-width:600px){
-            .about{
-                width:100%;
-                float: none;
-            }
-            .me{
-                width:100%;
-                float:none;
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link type="text/css" rel="stylesheet" href="CSS/style.css">
+    <title>Yash Gangan | Home</title>
 </head>
 <body>
-<header>
-    <h1>Hey,<br> I'm Yash<br>and i'm learning to code</h1>
-</header>
-    <!--navigation bar-->
-    <nav>
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT ME</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-    </nav>
-    <hr>
-    <!--about me--><div class="about">
-    <h2><div id="about"></div>ABOUT</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum itaque cum repellat consequatur nam sequi? Sapiente unde in laboriosam nisi suscipit, vel rem consequatur aliquid explicabo temporibus earum dolores voluptate asperiores totam est quo enim velit. Molestiae doloremque eum dicta aliquam sed, ratione pariatur mollitia ipsum laborum necessitatibus molestias recusandae</div></p>
-    <div class="me"></div>
-        <img src=image/me.jpg alt="this is me" width="250">
-    <hr>
-    <!--contact-->
-    <h2><div id="contact">CONTACT</div></h2>
-    <p>I know there's nothing much to see here at the moment, but maybe you'd be interested to talk with me.<br>
-    <h3>Here are my socials:</h3>
-    <a href=https://www.instagram.com/yashgangan_/ target="_blank">Instagram</a> 
-    <a href=https://www.linkedin.com/in/yash-gangan-1939a4217/ target="_blank">LinkedIn</a>
-    <a href=https://twitter.com/yashgangan_ target="_blank">Twitter</a>
-    <br>
-    <br>
-    <!--contact form-->
-    <h3>Or you can drop me a message below,</h3> <br>
-    <form action="#" method="get">
-        <label for="name1">Your Name:</label>
-        <input type="text" id="name1" name="name1"><br><br>
-        <label for="Email">Your email adresss:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="sub">Subject:</label>
-        <input type="text" id="sub" name="sub"><br><br>
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="msg" rows="3" cols="30"></textarea> <br><br><br>
-        <input class="button" type="submit" value="Submit">
-    </form>
-<hr>
+    <!--Header-->
+<div id="home">
+<div class="bgimg">
+    <div class="header">
+        <h1>Hey, I'm Yash Gangan</h1>
+        <h2>Student | Frontend Developer | Geek</h2>
+    </div>
+</div>
+</div>
+
+    <!--Navbar-->
+<div class="navbar">
+    <ul>
+        <li><a href="#about"><i class="fas fa-user-alt fa-2x"></i></a></li>
+        <li><a href="#projects"><i class="fas fa-briefcase fa-2x"></i></a></li>
+        <li><a href="#contact"><i class="fas fa-envelope fa-2x"></i></a></li>
+        <li><a href="#home"><i class="fas fa-angle-double-up fa-3x"></i></a></li>
+    </ul>
+</div>
+    <!--About-->
+<section>
+    <div id="about">
+        <div class="about">
+            <h2>About Me</h2>
+        </div>
+            <div class="container">
+                <div class="aboutme">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam expedita perspiciatis dolorum in, esse quidem minima voluptatem eos voluptates saepe, perferendis porro dolores sint aspernatur aliquid deleniti totam eveniet velit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem quibusdam consectetur in expedita. Nobis, repellat cum in eum perspiciatis eos velit laudantium explicabo ad excepturi consequatur odio nostrum officiis?</p>
+                    <button class="rbtn">Read More</button>
+                </div>
+                <div class="me">
+                    <img src="image/me.jpg" alt="a picture of me">
+                </div>
+            </div>
+    </div>
+</section>
+
+    <!--Projects-->
+<section>
+    <div id="projects">
+        <div class="projects">
+            <h2>Projects</h2>
+            <div class="container">
+                <div class="card prflex">
+                    <h3>Project1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, perferendis.</p>
+                    <button class="rbtn">Read More</button>
+                </div>
+                <div class="card prflex">
+                    <h3>Project2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, perferendis.</p>
+                    <button class="rbtn">Read More</button>
+                </div>
+                <div class="card prflex">
+                    <h3>Project2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, perferendis.</p>
+                    <button class="rbtn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Contact-->
+<section>
+    <div id="contact">
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <form class="card">
+                <input type="text" id="name" name="name" placeholder="Name"><br>
+                <input type="email" id="email" name="email" placeholder="Email"><br>
+                <textarea id="msg" name="msg" placeholder="Your message goes here..."></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+</section>
 <footer>
     Copyright &copy; 2021, Yash Gangan
 </footer>
-</p>
 </body>
 </html>
