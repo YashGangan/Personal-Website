@@ -1,7 +1,7 @@
 # Portfolio
 
 To those who want to see the live site,
-visit github.yashgangan.io/Portfolio
+visit  https://yashgangan.github.io/Portfolio/
 
 ⚠️ Since this is my first web development project,
 The site is not at all responsive. Its best viewed on a desktop, it breaks for all smaller screens ⚠️
